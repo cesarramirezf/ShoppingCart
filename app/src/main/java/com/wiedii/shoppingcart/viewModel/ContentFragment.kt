@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wiedii.shoppingcart.R
 import com.wiedii.shoppingcart.viewModel.models.Movie
@@ -42,9 +43,9 @@ class ContentFragment : Fragment() {
         getMovieData { movies : List<Movie> ->
             recyclerView.adapter = MovieAdapter(movies,
                 clickClousure = {
-                    Toast.makeText(requireContext(), "Agregado al carrito, ${it.title}", Toast.LENGTH_SHORT).show()
-                    val listMovies: MutableList<Movie> = mutableListOf()
-                    listMovies.add(it)
+                    Toast.makeText(requireContext(), "Agregado al carrito ${it.title}", Toast.LENGTH_SHORT).show()
+                    val listCartMovies: MutableList<Movie> = mutableListOf()
+                    listCartMovies.add(it)
                 }
             )
         }

@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         replaceFragment(ContentFragment())
 
-        val ivShoppingCart = findViewById<ImageView>(R.id.iv_shopping_cart_toolbar)
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         bottomNavigation.setOnNavigationItemReselectedListener {
@@ -30,8 +29,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.ic_info -> replaceFragment(infoFragment)
             }
         }
-
-        ivShoppingCart.setOnClickListener{ replaceFragment(CartFragment()) }
     }
 
     private fun replaceFragment(fragment: Fragment) =
