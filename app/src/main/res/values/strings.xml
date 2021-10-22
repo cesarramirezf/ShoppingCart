@@ -1,0 +1,21 @@
+<resources>
+    !--General
+    <string name="app_name">Movie Shop</string>
+
+    !-- Nav menu
+    <string name="nm_home">Home</string>
+    <string name="nm_cart">Cart</string>
+    <string name="nm_info">Info</string>
+
+    !-- Info Fragment
+    <string name="inf_tittle">Prueba practica - SERVAL</string>
+    <string name="info_desc">
+        Consiste en crear una tienda de peliculas con la API de The Movie DB,
+        ademas de tener una base de datos interna para cuando no se tenga conexion a internet
+        y una interfaz agradable, fluida e intutiva para el usuario.
+    </string>
+    <string name="info_dev">Desarrollado por César Ramírez F.</string>
+    <string name="info_date_1">Cúcuta, Colombia.</string>
+    <string name="info_date_2">Octubre, 2021.</string>
+
+</resources>
